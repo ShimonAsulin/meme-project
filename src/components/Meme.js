@@ -56,7 +56,7 @@ function Meme() {
     //   share button
       const share = {
         text: "Share",
-        url: "http://localhost:3000",
+        url: "https://meme-generatorrr.netlify.app/",
         title: "Share",
         }
 
