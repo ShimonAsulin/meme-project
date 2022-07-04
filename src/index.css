@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+
+.header {
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  align-items: center;
+  padding: .4em;
+  color: #fff;
+  font-size: .7rem;
+}
+
+.header--icon {
+  margin-right: .2em;
+  width: 35px;
+}
+
+.header--title {
+  
+}
+
+.header--project {
+  text-align: center;
+  margin-left: auto;
+}
+
+.header--project span {
+  display: block;
+}
+
+
+
+main {
+  padding: 2em
+}
+
+.form {
+  display: grid;
+  grid-template: 30px 30px / 1fr;
+  gap: 17px;
+  
+}
+.input-form {
+  border-radius: 6px;
+  border:1px solid #D5D4D8;
+  padding: 1.3em;
+}
+.input-form:focus {
+  outline: none !important;
+  border:1px solid rgb(107, 107, 107);
+}
+
+
+
+/* meme */
+
+.meme {
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+.meme-text {
+  position: absolute;
+  color:#fff;
+  text-align: center;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;   
+}
+
+.top {
+ top: 20px;
+}
+
+.bottom {
+  bottom: 23px;
+}
+
+.meme-img {
+  max-width: 100%;
+  height: 200px;
+  margin: 2em 0;
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+}
+.btn:active {
+  background-color: rgb(235, 235, 235)
+}
+.btn-group {
+ display: flex;
+
+}
+
+.btn-get-image{
+  border-image: linear-gradient(45deg, rgb(103, 177, 157), rgb(241, 216, 53)) 1;
+  border-width: 3px;
+  background-color: transparent;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn-download {
+  margin-left: auto;
+  margin-right: .2em;
+  border: none;
+  background-color: transparent;
+  color: rgb(228, 21, 21);
+  font-size: 1.3rem;
+  padding: .2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.btn-share {
+  border: none;
+  background-color: transparent;
+  color: rgb(25, 35, 223);
+  font-size: 1.3rem;
+  padding: .2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
