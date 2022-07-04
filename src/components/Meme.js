@@ -55,9 +55,9 @@ function Meme() {
 
     //   share button
       const share = {
-        text: "Share",
+        text: "Meme Generator",
         url: "https://meme-generatorrr.netlify.app/",
-        title: "Share",
+        title: "Meme Generator",
         }
 
    
