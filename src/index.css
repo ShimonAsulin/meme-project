@@ -12,11 +12,17 @@ body {
 
 .header {
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  
+}
+
+.header-text {
   display: flex;
   align-items: center;
   padding: .4em;
   color: #fff;
   font-size: .7rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .header--icon {
@@ -40,7 +46,9 @@ body {
 
 
 main {
-  padding: 2em
+  padding: 5em 2em;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .form {
