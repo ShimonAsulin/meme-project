@@ -48,6 +48,7 @@ function Meme() {
     const handleCaptureClick = useCallback(async () => {
         const canvas = await html2canvas(document.querySelector('.meme'), {
             useCORS: true,
+            y:-2
         });
         const dataURL = canvas.toDataURL('image/png');
         downloadjs(dataURL, 'download.png', 'image/png');

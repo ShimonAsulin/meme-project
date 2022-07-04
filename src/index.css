@@ -55,7 +55,7 @@ main {
   display: grid;
   grid-template: 30px 30px / 1fr;
   gap: 17px;
-  
+  margin-bottom: 2em;
 }
 .input-form {
   border-radius: 6px;
@@ -75,7 +75,7 @@ main {
   position: relative;
   text-align: center;
   word-wrap: break-word;
-
+  
 }
 
 .meme-text {
@@ -112,10 +112,9 @@ main {
 }
 
 .meme-img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 356px;
   height: 200px;
-  margin: 2em 0;
-  border-radius: 5px;
 }
 
 .btn {
@@ -126,8 +125,8 @@ main {
   background-color: rgb(235, 235, 235)
 }
 .btn-group {
- display: flex;
-
+  display: flex;
+  margin-top: 2em;
 }
 
 .btn-get-image{
