@@ -104,11 +104,11 @@ main {
 }
 
 .top {
- top: 20px;
+ top: 0;
 }
 
 .bottom {
-  bottom: 23px;
+  bottom: 0;
 }
 
 .meme-img {
