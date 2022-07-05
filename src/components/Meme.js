@@ -1,8 +1,7 @@
 import { useEffect, useState, useCallback } from "react"
 import html2canvas from 'html2canvas';
 import downloadjs from 'downloadjs';
-import { BsDownload, BsShare } from "react-icons/bs"
-import { RWebShare } from "react-web-share";
+import { BsDownload } from "react-icons/bs"
 
 
 function Meme() {
@@ -15,13 +14,13 @@ function Meme() {
 
     const [allMemes, setAllMemes] = useState([])
 
-    useEffect(() => {
-        fetch('https://api.imgflip.com/get_memes')
-        .then(response => response.json())
-        .then(data => {
-            setAllMemes(data.data.memes)
-        })
-
+    useEffect( () => {
+        async function fetchData() {
+        const res = await fetch('https://api.imgflip.com/get_memes')
+        const data = await res.json()
+        setAllMemes(data.data.memes)
+        }
+        fetchData();
     }, [])
     
     function handleOnChange(event) {
@@ -52,18 +51,8 @@ function Meme() {
         });
         const dataURL = canvas.toDataURL('image/png');
         downloadjs(dataURL, 'download.png', 'image/png');
-      }, []);
+      }, []);    
 
-    //   share button
-      const share = {
-        text: "Meme Generator",
-        url: "https://meme-generatorrr.netlify.app/",
-        title: "Meme Generator",
-        file: "../src\\meme-icon.png"
-        }
-
-        console.log(share);
-    
     return (
         <main>
             <div className="form">  
@@ -98,9 +87,6 @@ function Meme() {
                 <div className="btn-group">    
                     <button onClick={handleClick} className="btn btn-get-image">new image</button>
                     <button onClick={handleCaptureClick}  className="btn btn-download"><BsDownload /></button> 
-                    <RWebShare data={share}>
-                        <button className="btn btn-share"><BsShare /></button>
-                    </RWebShare>
                 </div>
 
         </main>
