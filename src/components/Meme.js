@@ -59,9 +59,10 @@ function Meme() {
         text: "Meme Generator",
         url: "https://meme-generatorrr.netlify.app/",
         title: "Meme Generator",
+        file: "../src\\meme-icon.png"
         }
 
-   
+        console.log(share);
     
     return (
         <main>
